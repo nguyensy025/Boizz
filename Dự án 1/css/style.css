@@ -506,3 +506,8 @@ footer {
 .next:hover {
     background-color: rgba(0, 0, 0, 0.8);
 }
+.map{
+    width: 200%;
+    margin-left: 1000px;
+
+}
