@@ -1,0 +1,80 @@
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styles */
+body {
+    font-family: "Sofia", sans-serif;
+    background-color: #f0f2f5;
+}
+
+/* Container styles */
+.info {
+    max-width: 400px;
+    margin: 0 auto;
+    background-color: #ffffff;
+    border-radius: 8px;
+    padding: 20px;
+    margin-top: 100px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+label {
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    margin-bottom: 10px;
+}
+
+.pwd-requirement {
+    font-size: 14px;
+    color: #666;
+}
+
+.form-button {
+    margin-top: 10px;
+}
+
+a {
+    display: block;
+    text-align: center;
+    margin-top: 10px;
+    text-decoration: none;
+    color: #385898;
+}
+
+button[type="submit"] {
+    background-color: #f0aa3a;
+    color: #ffffff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+}
+
+button[type="submit"]:hover {
+    background-color: #9b6e07;
+}
+
+/* Responsive styles */
+@media (max-width: 480px) {
+    .info {
+        max-width: 300px;
+    }
+}

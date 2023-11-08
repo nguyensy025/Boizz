@@ -1,0 +1,320 @@
+@font-face {
+    font-family: 'Rocher';
+    src: url(https://assets.codepen.io/9632/RocherColorGX.woff2);
+}
+
+* {
+    margin: 0;
+    list-style: none;
+    text-decoration: none;
+    font-family: sans-serif;
+
+}
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgb(130, 104, 66);
+    height: 50px;
+    padding: 0 20px;
+}
+.head {
+    height: 90px;
+    background-color: burlywood;
+}
+
+.logo {
+    width: 25%;
+    height: 100%;
+    justify-content: space-evenly;
+    display: flex;
+}
+
+.logo h2 {
+    line-height: 90px;
+    font-variant: inherit;
+    color: white;
+    font-family: 'Rocher';
+}
+
+.logo img {
+    transform: scale(1.5);
+}
+
+nav {
+    width: 100%;
+}
+
+.top-right {
+    position: absolute;
+    right: 20px;
+    top: 30px;
+    width: 100px;
+    display: flex;
+    justify-content: space-between;
+    font-size: xx-large;
+    color: white;
+
+}
+
+.top-right a {
+    color: white;
+}
+
+.menu {
+    background-color: rgb(130, 104, 66);
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+    display: flex;
+    clear: both;
+}
+.menu {
+    display: flex;
+    list-style: none;
+}
+.search input {
+    border: 1px;
+    border-radius: 10px;
+    height: 30px;
+    width: 300px;
+    outline: none;
+    padding-left: 10px;
+}
+
+.menu li {
+    width: 10%;
+    margin-left: 30px;
+    text-align: center;
+    z-index: 1;
+}
+
+
+.menu li a {
+    color: #fff;
+    font-size: x-large;
+    font-family: monospace;
+}
+
+.menu li:hover {
+    background-color: rgb(197, 172, 102);
+    border-radius: 20px;
+    transition: .5s;
+}
+
+
+.menu .search input {
+    margin-left: 300px;
+    border: 1px;
+    border-radius: 10px;
+    height: 30px;
+    width: 300px;
+    outline: none;
+    padding-left: 10px;
+}
+
+.search .tk {
+    background-color: white;
+    right: 25px;
+    bottom: -3px;
+    color: gray;
+    position: relative;
+}
+
+.menucon {
+    border-radius: 0px 0 10px 10px;
+    width: 200px;
+    position: relative;
+    right: 3em;
+    height: 210px;
+    bottom: 2px;
+    display: none;
+    background-color: rgb(130, 104, 66);
+}
+
+.menucon li {
+    padding-left: 20px;
+    width: 100%;
+    text-align: left;
+    position: relative;
+    right: 60px;
+    color: #fff;
+}
+
+.menu li:hover .menucon {
+    display: block;
+    transition: .1s;
+}
+
+footer {
+    margin-top: 50px;
+    margin-bottom: 20px;
+    width: 100%;
+    border-top: 1px solid gray;
+}
+
+.tuvan {
+    width: 100%;
+    text-align: center;
+}
+
+.tuvan h1 {
+    padding: 20px;
+}
+
+.tuvan input {
+    padding: 10px;
+    margin: 10px;
+    border-radius: 10px;
+    border: 1px solid grey;
+    background: white;
+    outline: none;
+    width: 250px;
+}
+
+.tuvan .send {
+    width: 100px;
+}
+
+.tuvan button {
+    height: 35px;
+    border-radius: 10px;
+    border: 1px;
+    color: white;
+    background: rgb(122, 122, 226);
+}
+
+.tuvan button:hover {
+    background: black;
+    cursor: pointer;
+    transition: .5s ease-in-out;
+    transform: scale(1.1);
+}
+
+.end {
+
+    width: 100%;
+    /* background: red; */
+    display: flex;
+}
+
+.end .about {
+    width: 20%;
+    padding: 30px;
+    line-height: 30px;
+    margin-left: 150px;
+
+}
+
+.end .about li:hover {
+    cursor: pointer;
+    color: blueviolet;
+}
+
+.end .thongtinbanquyen {
+    width: 25%;
+    padding: 30px;
+    line-height: 30px;
+    margin-left: 150px;
+}
+
+.end .thongtinbanquyen li:hover {
+    color: blueviolet;
+    cursor: pointer;
+}
+
+.end .hotro {
+    width: 25%;
+    padding: 30px;
+    line-height: 30px;
+}
+
+.end .hotro li:hover {
+    color: blueviolet;
+    cursor: pointer;
+}
+
+.banquyen {
+    width: 100%;
+    text-align: center;
+}
+
+.banquyen a {
+    color: black;
+}
+
+.hotro img {
+    width: 70%;
+
+}
+
+.thongbao {
+    width: 100%;
+    text-align: center;
+    margin-top: 50px;
+}
+
+article {
+    margin: 0 auto;
+    margin-top: 50px;
+    width: 70%;
+    height: 500px;
+
+
+}
+
+article table {
+    width: 100%;
+    text-align: center;
+    max-height: 100%;
+    border-collapse: collapse;
+}
+
+article table tbody {
+    width: 100%;
+
+
+}
+
+article table tr {
+    width: 100%;
+
+
+}
+
+tr #hinh {
+    width: 20%;
+}
+
+#hinh img {
+    width: 50%;
+}
+
+tr input {
+    outline: none;
+    text-align: center;
+    width: 15%;
+
+}
+
+.tongtien {
+    margin-top: 20px;
+    border: 1px solid;
+    float: right;
+    height: 50px;
+    width: 200px;
+    text-align: center;
+    line-height: 50px;
+    border-radius: 10px;
+    font-family: sans-serif;
+
+    transition: .5s;
+
+}
+
+.tongtien:hover {
+    color: white;
+    background: green;
+    cursor: pointer;
+    transition: .5s ease-in-out;
+}
