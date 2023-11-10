@@ -11,7 +11,7 @@
     <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
     <script src="https://unpkg.com/scrollreveal"></script>
     <link rel="stylesheet" href="./countdown.css">
-    <link rel="stylesheet" href="https://fonts.google.com/specimen/Lato">
+   
 </head>
 
 <body>
@@ -55,6 +55,7 @@
     
     <header>
         <div class="slideshow-container">
+
             <div class="mySlides fade">
                 <img id="hinhanh" src="image/header.webp" style="height: 435px;">
             </div>
@@ -79,38 +80,6 @@
         </div>
     </header>
     
-        
-        <div class="slideshow-container">
-
-            <div class="mySlides fade">
-                <img id="hinhanh" src="image/header.webp" style="height: 435px;">
-
-            </div>
-
-            <div class="mySlides fade">
-                <img src="image/header2.webp " style="height: 435px;">
-
-            </div>
-            <a class="prev" onclick="plusSlides(-1)">❮</a>
-            <a class="next" onclick="plusSlides(1)">❯</a>
-
-        </div>
-        <br>
-
-        <div style="text-align:center">
-            <span class="dot" onclick="currentSlide(1)"></span>
-            <span class="dot" onclick="currentSlide(2)"></span>
-            <span class="dot" onclick="currentSlide(3)"></span>
-        </div>
-    </header>
-    <div class="slogan">
-        <img src="image/0.png" alt="">
-
-        <div class="slogantext">
-            <h2>LittleCat bảo vệ hoàng thượng của bạn cách tốt nhất</h2>
-        </div>
-
-    </div>
     <div class="danhmuc">
         <h1>Danh Mục Sản Phẩm</h1>
     </div>
@@ -184,10 +153,10 @@
         <div class="thucan">
             <div class="khung">
                 <div class="hinh">
-                    <a href="thongtinsp.html"> <img src="image/thucan1.jpg" alt="">
+                    <a href="./sanpham/hat-vi-ca-hoi-va-rau.html"> <img src="image/thucan1.jpg" alt="">
                     </a> </div>
                 <div class="thongtin">
-                    <h3><a href="thongtinsp.html">Thức ăn cho mèo</a> </h3> <span> Giá: 150.000 VNĐ</span>
+                    <h3><a href="./sanpham/hat-vi-ca-hoi-va-rau.html">Hạt vị cá hồi và rau cho mèo</a> </h3> <span> Giá: 150.000 VNĐ</span>
                 </div>
                 <br>
                 <div class="nutan">
@@ -197,10 +166,10 @@
             </div>
             <div class="khung">
                 <div class="hinh">
-                    <a href="thongtinsp.html"> <img src="image/thucan2.jpg" alt="">
+                    <a href="./sanpham/Soup-lon-vi-ga.html"> <img src="image/thucan2.jpg" alt="">
                     </a> </div>
                 <div class="thongtin">
-                    <h3><a href="thongtinsp.html">Thức ăn cho mèo</a> </h3> <span> Giá: 150.000 VNĐ</span>
+                    <h3><a href="./sanpham/Soup-lon-vi-ga.html">Soup lon vị gà cho mèo lớn</a> </h3> <span> Giá: 50.000 VNĐ</span>
                 </div>
                 <br>
                 <div class="nutan">
@@ -213,7 +182,7 @@
                     <a href="thongtinsp.html"> <img src="image/thucan3.jpg" alt="">
                     </a> </div>
                 <div class="thongtin">
-                    <h3><a href="thongtinsp.html">Thức ăn cho mèo</a> </h3> <span> Giá: 150.000 VNĐ</span>
+                    <h3><a href="thongtinsp.html">Hạt vị cá thu</a> </h3> <span> Giá: 150.000 VNĐ</span>
                 </div>
                 <br>
                 <div class="nutan">
@@ -226,7 +195,7 @@
                     <a href="thongtinsp.html"> <img src="image/thucan4.jpg" alt="">
                     </a> </div>
                 <div class="thongtin">
-                    <h3><a href="thongtinsp.html">Thức ăn cho mèo</a> </h3> <span> Giá: 150.000 VNĐ</span>
+                    <h3><a href="thongtinsp.html">Hạt vị tổng hợp</a> </h3> <span> Giá: 150.000 VNĐ</span>
                 </div>
                 <br>
                 <div class="nutan">
@@ -306,102 +275,14 @@
         </div>
 
     </aside>
-    <script>
-		var slideIndex = 1;
-		showSlides(slideIndex);
-
-		function plusSlides(n) {
-		  showSlides(slideIndex += n);
-		}
-
-		function currentSlide(n) {
-		  showSlides(slideIndex = n);
-		}
-
-		function showSlides(n) {
-		  var i;
-		  var slides = document.getElementsByClassName("mySlides");
-		  var dots = document.getElementsByClassName("dot");
-if (n > slides.length) {slideIndex = 1}    
-		  if (n < 1) {slideIndex = slides.length}
-		  for (i = 0; i < slides.length; i++) {
-		      slides[i].style.display = "none";  
-		  }
-		  for (i = 0; i < dots.length; i++) {
-		      dots[i].className = dots[i].className.replace(" active", "");
-		  }
-		  slides[slideIndex-1].style.display = "block";  
-		  dots[slideIndex-1].className += "active";
-		  setTimeout(showSlides, 1000);
-		}
-</script>
-
-<script>
-    var slideIndex = 1;
-    showSlides(slideIndex);
-
-    function plusSlides(n) {
-      showSlides(slideIndex += n);
-    }
-
-    function currentSlide(n) {
-      showSlides(slideIndex = n);
-    }
-
-    function showSlides(n) {
-      var i;
-      var slides = document.getElementsByClassName("mySlides");
-      var dots = document.getElementsByClassName("dot");
-if (n > slides.length) {slideIndex = 1}    
-      if (n < 1) {slideIndex = slides.length}
-      for (i = 0; i < slides.length; i++) {
-          slides[i].style.display = "none";  
-      }
-      for (i = 0; i < dots.length; i++) {
-          dots[i].className = dots[i].className.replace(" active", "");
-      }
-      slides[slideIndex-1].style.display = "block";  
-      dots[slideIndex-1].className += "active";
-      setTimeout(showSlides, 1000);
-    }
-</script>
-<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1776.0815737413075!2d108.05522439106338!3d12.690471949969883!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3171f74251e94f17%3A0x3879b05dc9401f68!2zU0nDilUgVEjhu4ogVEjDmiBDxq9ORyBDSMOTUCBQRVRTSE9Q!5e0!3m2!1svi!2s!4v1686820600156!5m2!1svi!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-<div class="countdown-container">
-    <div class="countdown-title">Thời gian còn lại cho Flash Sale:</div>
-    <div class="countdown-timer">
-      <span class="countdown-hours"></span>
-      <span class="countdown-minutes"></span>
-      <span class="countdown-seconds"></span>
+<!-- //map -->
+<br>
+    <div class="map-text">
+        <h1>Hãy đến LittleCat để có thêm nhiều ưu đãi  <i class='bx bxs-hot'></i></h1>
     </div>
-  </div>
-<script>
-    function countdown() {
-var saleEndTime = new Date("june 30, 2023 23:59:59").getTime();
-
-var x = setInterval(function() {
-
-var now = new Date().getTime();
-
-var distance = saleEndTime - now;
-
-var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-
-document.querySelector('.countdown-days').innerHTML = days + " ngày";
-document.querySelector('.countdown-hours').innerHTML = hours + " giờ";
-document.querySelector('.countdown-minutes').innerHTML = minutes + " phút";
-document.querySelector('.countdown-seconds').innerHTML = seconds + " giây";
-
-if (distance < 0) {
-  clearInterval(x);
-  document.querySelector('.countdown-timer').innerHTML = "Flash Sale đã kết thúc";
-}
-}, 1000);
-}
-
-countdown();
+    <br>
+<iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1776.0815737413075!2d108.05522439106338!3d12.690471949969883!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3171f74251e94f17%3A0x3879b05dc9401f68!2zU0nDilUgVEjhu4ogVEjDmiBDxq9ORyBDSMOTUCBQRVRTSE9Q!5e0!3m2!1svi!2s!4v1686820600156!5m2!1svi!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+<br>
 </script>
 
 
@@ -421,8 +302,8 @@ countdown();
 
             <div class="about">
                 <h3><a href="thongtinsp.html">HỖ TRỢ KHÁCH HÀNG</a></h3><br>
-                <li>Hoạt động từ 8h – 21h hàng ngày: 09********</li>
-                <li>Hỗ trợ đơn hàng online: 8h – 17h, Thứ Hai đến Thứ Bảy: 09********</li>
+                <li>Hoạt động từ 8h – 21h hàng ngày: 0123456789</li>
+                <li>Hỗ trợ đơn hàng online: 8h – 17h, Thứ Hai đến Thứ Bảy: 0123456789</li>
                 <li>Phương thức thanh toán</li>
                 <li>Phương thức giao hàng</li>
                 <li>Hướng dẫn đổi trả hàng</li>
@@ -452,7 +333,7 @@ countdown();
         </div>
 
         <div class="banquyen">
-            <a href="">Bản quyền © 2023 CÔNG TY TNHH LITTLECAT VIỆT NAM – Giấy phép ĐKKD số 0XXXXXX</a>
+            <a href="">Bản quyền © 2023 CÔNG TY TNHH LITTLECAT VIỆT NAM – Giấy phép ĐKKD số 0123456</a>
         </div>
     </footer>
 

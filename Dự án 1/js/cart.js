@@ -1,7 +1,8 @@
 let cartItems = JSON.parse(localStorage.getItem("cart"));
 if (cartItems == null) cartItems = [];
 
-var arrsp = [  {    hinh: "image/1.png",    ten: "Thức ăn cho mèo",    soluong: 1,    gia: 100000,  },  {    hinh: "image/1.png",    ten: "Thức ăn cho chó",    soluong: 2,    gia: 100000,  },  {    hinh: "image/0.png",    ten: "Thức ăn cho chó",    soluong: 4,    gia: 100000,  },];
+var arrsp = [  {    hinh: "image/1.png",    ten: "Thức ăn cho mèo",    soluong: 1,    gia: 100000,  },  {    hinh: "image/1.png",    ten: "Thức ăn cho chó",    soluong: 2,    gia: 100000,  },  {    hinh: "image/0.png",    ten: "Thức ăn cho chó",    soluong: 4,    gia: 100000,  }, {    hinh: "image/thucan1.jpg",    ten: "Thức ăn cho mèo",    soluong: 1,    gia: 100000,  },
+        {    hinh: "image/thucan2.jpg",    ten: "Soup lon vị gà cho mèo trưởng thành",    soluong: 1,    gia: 50000,  }, {    hinh: "image/thucan3.jpg",    ten: "Hạt vị cá thu",    soluong: 1,    gia: 150000,  }, {    hinh: "image/thucan4.jpg",    ten: "Hạt vị tổng hợp",    soluong: 1,    gia: 150000,  }];
 
 function napsp() {
   var tbody = document.getElementById("datadrow");
