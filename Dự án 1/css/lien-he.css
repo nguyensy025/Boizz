@@ -24,7 +24,6 @@
     font-family: inherit;
     font-size: inherit;
     background-color: #f4f2f2;
-
     color: #646464;
     padding: 0.7rem 1rem;
     border-radius: 30px;
@@ -68,7 +67,7 @@
     fill: #000000;
   }
   .search__input {
-    width: 600px; /* Điều chỉnh chiều rộng của khung nhập theo mong muốn của bạn */
+    width: 800px; /* Điều chỉnh chiều rộng của khung nhập theo mong muốn của bạn */
     height: 40px; /* Điều chỉnh chiều cao của khung nhập theo mong muốn của bạn */
     font-size: 16px; /* Điều chỉnh kích thước font chữ trong khung nhập theo mong muốn của bạn */
 }
@@ -97,4 +96,55 @@
     margin-top: 10px;
     padding: 100px;
     margin-left: 143px;
+}
+.nutdanhmuc button {
+  margin: 20px;
+}
+.box1{
+  box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    float: left;
+    width: 238px;
+    height: 72px;
+    overflow: hidden;
+    padding: 15px 20px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    background: #ffffff;
+    border: 1px solid white;
+}
+
+.box1{
+  margin-left: 9px;
+  margin-top: 12px;
+}
+.box1 span {
+  margin-right: 10px; /* Thêm khoảng cách bên phải của thẻ span */
+}
+.box1 p {
+  font-size: 15px; /* Đặt kích thước chữ cho thẻ p */
+}
+.list button {
+  margin-bottom: 20px; /* Thêm khoảng cách dưới mỗi nút */
+}
+.list{
+  margin: 1px;
+}
+ .question {
+  font-size: 18px;
+  padding: 0.5em 2em;
+  border: transparent;
+  box-shadow: 0px 0px 0px rgba(0,0,0,0.4);
+  color: rgb(0, 0, 0);
+  border-radius: 4px;
+ }
+ .list button:hover {
+  background-color: #f8bd85; /* Đổi màu nền khi hover */
+}
+
+footer{
+  margin-left: -222px;
+  width: 130%;
 }
