@@ -31,8 +31,19 @@ body{
     transition: 0.5s;
 }
 .logo {
-    height: 80px;
     padding: 16px ;
+}
+
+.logo a {
+    width: 100px; 
+    height: 100px;
+    background: url('Meo0.png') no-repeat center center;
+    background-size: cover;
+}
+
+.logo span {
+    font-size: 20px;
+    font-weight: bold;
 }
 
 .menu {

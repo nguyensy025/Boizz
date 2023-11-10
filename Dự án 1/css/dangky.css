@@ -3,7 +3,6 @@
   padding: 100px 0;
   width: 100%;
   background-image: url("../image/background-hoc-online-dang-yeu_66494499693.jpg");
-  margin-top: 20px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -140,4 +139,7 @@
   color: white;
   transition: .5s;
   cursor: pointer;
+}
+.my-checkbox {
+  display: flex;
 }
