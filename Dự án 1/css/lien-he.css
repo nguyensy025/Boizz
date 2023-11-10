@@ -23,7 +23,7 @@
   .search__input {
     font-family: inherit;
     font-size: inherit;
-    background-color: #f4f2f2;
+    background-color: #000000;
     color: #646464;
     padding: 0.7rem 1rem;
     border-radius: 30px;
@@ -43,7 +43,7 @@
   
   .search__input::-webkit-input-placeholder {
     font-weight: 100;
-    color: #ccc;
+    color: #000000;
   }
   
   .search__input:focus + .search__button {
@@ -67,7 +67,7 @@
     fill: #000000;
   }
   .search__input {
-    width: 800px; /* Điều chỉnh chiều rộng của khung nhập theo mong muốn của bạn */
+    width: 580px; /* Điều chỉnh chiều rộng của khung nhập theo mong muốn của bạn */
     height: 40px; /* Điều chỉnh chiều cao của khung nhập theo mong muốn của bạn */
     font-size: 16px; /* Điều chỉnh kích thước font chữ trong khung nhập theo mong muốn của bạn */
 }
