@@ -1,0 +1,100 @@
+@font-face {
+    font-family: 'Rocher';
+    src: url(https://assets.codepen.io/9632/RocherColorGX.woff2);
+}
+
+* {
+    margin: 0;
+    list-style: none;
+    text-decoration: none;
+    font-family: sans-serif;
+}
+.bang-dien{
+    color: rgb(165, 116, 42);
+}
+.search {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+    
+  }
+  
+  .search__input {
+    font-family: inherit;
+    font-size: inherit;
+    background-color: #f4f2f2;
+
+    color: #646464;
+    padding: 0.7rem 1rem;
+    border-radius: 30px;
+    width: 12em;
+    transition: all ease-in-out .5s;
+    margin-left: 440px;
+  }
+  
+  .search__input:hover, .search__input:focus {
+    box-shadow: 0 0 1em #00000013;
+  }
+  
+  .search__input:focus {
+    outline: none;
+    background-color: #f0eeee;
+  }
+  
+  .search__input::-webkit-input-placeholder {
+    font-weight: 100;
+    color: #ccc;
+  }
+  
+  .search__input:focus + .search__button {
+    background-color: #f0eeee;
+  }
+  
+  .search__button {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    margin-left: -55px;
+  }
+  
+  .search__button:hover {
+    cursor: pointer;
+  }
+  
+  .search__icon {
+    height: 1.3em;
+    width: 1.3em;
+    fill: #000000;
+  }
+  .search__input {
+    width: 600px; /* Điều chỉnh chiều rộng của khung nhập theo mong muốn của bạn */
+    height: 40px; /* Điều chỉnh chiều cao của khung nhập theo mong muốn của bạn */
+    font-size: 16px; /* Điều chỉnh kích thước font chữ trong khung nhập theo mong muốn của bạn */
+}
+
+.search__button {
+    width: 40px; /* Điều chỉnh chiều rộng của nút tìm kiếm theo mong muốn của bạn */
+    height: 40px; /* Điều chỉnh chiều cao của nút tìm kiếm theo mong muốn của bạn */
+    border-radius: 50%; 
+}
+.tieude {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 150px; /* Điều này sẽ giữ nội dung ở giữa theo chiều dọc trên toàn bộ màn hình */
+    /* Nếu bạn muốn giữ nội dung ở giữa theo chiều ngang, bạn có thể sử dụng width: 100%; */
+}
+
+.danhmuc1{
+    margin: 10px;
+    padding: 100px;
+    margin-left: 143px;
+}
+
+.cauhoi{
+    margin: 10px;
+    margin-top: 10px;
+    padding: 100px;
+    margin-left: 143px;
+}
