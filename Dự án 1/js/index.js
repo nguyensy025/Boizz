@@ -2,15 +2,15 @@ ScrollReveal({
   reset: true,
   distance: "60px",
   duration: 2500,
-  delay: 400,
+  delay: 1,
 });
 
 ScrollReveal().reveal(".slogantext , .danhmuc ,.hot ,.gioithieu ,.phukien ", {
-  delay: 500,
+  delay: 1,
   origin: "left",
 });
 ScrollReveal().reveal(".slogan img", {
-  delay: 500,
+  delay: 1,
   origin: "bottom",
 });
 
