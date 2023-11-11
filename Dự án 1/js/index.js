@@ -46,4 +46,5 @@ function showSlides(n) {
   dots[slideIndex - 1].className += " active";
 }
 
-var giohang = JSON.parse(localStorage.getItem("cart"));
+
+
