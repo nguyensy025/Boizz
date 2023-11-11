@@ -9,8 +9,8 @@
   <link rel="stylesheet" href="../css/thongtin.css">
   <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
   <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+  <link rel="stylesheet" href="../css/sanpham.css">
 </head>
-
 <body>
   <div class="head">
     <a href="../index.html">
@@ -54,12 +54,20 @@
       <br>
     </div>
     <div class="thongtin">
-      <h3>Thức ăn cho mèo Zoi Cat</h3>
+      <h3>Thức ăn cho mèo Zoi Cat </h3>
       <span> Giá: 150.000 vnđ</span> <br>
       <span>Lượt Xem : 199</span> <i class="ri-eye-line"></i>
       <br>
       <input type="button" value="Thêm Vào Giỏ Hàng" onclick="addCart(this, 3, 'Thức ăn cho mèo Zoi Cat', 150000, 'image/1.png', 1)">
       <input type="button" value="Mua Ngay">
+
+
+  <div id="popup" class="popup">
+  Đã thêm vào giỏ hàng thành công
+</div>
+
+      
+      
       <br>
       <div class="soluong">
         <input type="number" placeholder="Số Lượng" step="1" min="1" value="1">
