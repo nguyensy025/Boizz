@@ -96,7 +96,7 @@ nav {
     background-color: rgb(197, 172, 102);
     border-radius: 20px;
     transition: .3s;
-
+    
 }
 
 .menu .search input {
@@ -417,7 +417,7 @@ footer {
     border-radius: 0px 0 10px 10px;
     width: 200px;
     position: relative;
-    right: 3em;
+    right: 35px;
     height: 210px;
     bottom: 2px;
     display: none;
@@ -431,7 +431,7 @@ footer {
     position: relative;
     right: 60px;
     color: #fff;
-
+    margin-left: 50px;
 }
 
 .menu li:hover .menucon {
