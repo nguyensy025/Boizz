@@ -1,0 +1,36 @@
+@font-face {
+    font-family: 'Rocher';
+    src: url(https://assets.codepen.io/9632/RocherColorGX.woff2);
+}
+
+* {
+    margin: 0;
+    list-style: none;
+    text-decoration: none;
+    font-family: sans-serif;
+}
+
+/* .head {
+    height: 90px;
+    background-color: burlywood;
+} */
+.top-right {
+    position: absolute;
+    right: 20px;
+    top: 30px;
+    width: 100px;
+    display: flex;
+    justify-content: space-between;
+    font-size: xx-large;
+    color: rgb(0, 0, 0);
+
+}
+video {
+    width: 90%; /* Đặt chiều rộng của video là 100% của phần tử chứa nó */
+    height: 80%; /* Chiều cao tự động điều chỉnh để duy trì tỷ lệ khung hình gốc */
+    margin-left: 73px;
+}
+
+h1{
+    margin: 50px;
+}
