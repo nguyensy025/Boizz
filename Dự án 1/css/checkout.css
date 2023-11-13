@@ -1,0 +1,517 @@
+@font-face {
+    font-family: 'Rocher';
+    src: url(https://assets.codepen.io/9632/RocherColorGX.woff2);
+}
+
+* {
+    margin: 0;
+    list-style: none;
+    text-decoration: none;
+    font-family: sans-serif;
+}
+
+.head {
+    height: 90px;
+    background-color: burlywood;
+}
+
+.logo {
+    width: 25%;
+    height: 100%;
+    justify-content: space-evenly;
+    display: flex;
+}
+
+.logo h2 {
+    line-height: 50px;
+    font-variant: inherit;
+    color: white;
+    font-family: 'Rocher';
+}
+
+.logo img {
+    transform: scale(1.5);
+    margin-top: -25px;
+}
+
+nav {
+    width: 100%;
+}
+
+.top-right {
+    position: absolute;
+    right: 20px;
+    top: 30px;
+    width: 100px;
+    display: flex;
+    justify-content: space-between;
+    font-size: xx-large;
+    color: rgb(0, 0, 0);
+
+}
+
+.top-right a {
+    color: white;
+}
+
+.menu {
+    background-color: rgb(130, 104, 66);
+
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+    display: flex;
+    clear: both;
+}
+.menucon {
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    z-index: 999; /* Đặt z-index lớn hơn slide để menu hiển thị phía trước */
+    white-space: nowrap; /* Ngăn các mục menu con xuống dòng */
+}
+
+.menucon li {
+    margin: 5px 0; /* Điều chỉnh khoảng cách dọc giữa các mục menu con */
+}
+
+.menu li:hover .menucon {
+    display: block;
+}
+
+.menu li {
+    width: 10%;
+    margin-left: 49px;
+    text-align: center;
+}
+
+.menu li a {
+    color: #fff;
+    font-size: x-large;
+    font-family: monospace;
+}
+
+.menu li:hover {
+    background-color: rgb(197, 172, 102);
+    border-radius: 20px;
+    transition: .3s;
+    
+}
+
+.menu .search input {
+    margin-left: 300px;
+    border: 1px;
+    border-radius: 10px;
+    height: 30px;
+    width: 300px;
+    outline: none;
+    padding-left: 10px;
+}
+
+.search .tk {
+    background-color: white;
+    right: 25px;
+    bottom: -3px;
+    color: gray;
+    position: relative;
+}
+
+header {
+    width: 100%;
+    height: 400px;
+    margin-bottom: 100px;
+    margin-top: 70px;
+}
+
+.slideshow-container {
+    position: relative;
+}
+
+header .slideshow-container img {
+    width: 100%;
+    height: 100%;
+}
+
+.slogan {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    background-color: antiquewhite;
+
+}
+
+.slogan img {
+    width: 40%;
+    display: flex;
+    position: relative;
+    left: 27%;
+    margin-top: 40px;
+}
+
+.slogantext {
+    z-index: 1;
+    text-align: center;
+    bottom: 130px;
+    right: 200px;
+    position: relative;
+
+}
+
+.slogantext h2 {
+    font-family: monospace;
+    font-size: xx-large;
+}
+
+article {
+    display: flex;
+}
+
+.khung {
+    margin-top: 50px;
+    margin-left: 10px;
+    width: 22.5%;
+    height: 400px;
+    border-radius: 10px;
+    padding: 10px;
+    border: 1px solid gray;
+}
+
+.khung .hinh {
+    width: 100%;
+    height: 75%;
+
+}
+
+.hinh img {
+    width: 100%;
+    height: 100%;
+    transition: 0.1s ease-in-out;
+
+}
+
+.hinh img:hover {
+    transform: translateY(-3%);
+    transition: 0.1s ease-in-out;
+}
+
+.thongtin {
+    font-family: monospace;
+    font-size: large;
+}
+
+.nutan input {
+    border-radius: 5px;
+    outline: none;
+    height: 30px;
+    margin-left: 15px;
+    border: 1px solid green;
+    background-color: white;
+    cursor: pointer;
+}
+
+.nutan input:hover {
+    background-color: rgb(35, 145, 18);
+    box-shadow: none;
+    color: white;
+    transition: .4s ease-in-out;
+}
+
+.danhmuc {
+    width: 100%;
+    height: 200px;
+    text-align: center;
+}
+
+.danhmuc h1 {
+    line-height: 200px;
+
+}
+
+aside {
+    width: 100%;
+}
+
+.thucan {
+    width: 100%;
+    display: flex;
+}
+
+.hot {
+    padding-left: 20px;
+    height: 10px;
+    display: flex;
+}
+
+.hot i {
+    position: relative;
+    bottom: 4px;
+    margin-left: 10px;
+    font-size: xx-large;
+    color: red;
+}
+
+.gioithieu {
+    margin-left: 20px;
+    margin-top: 50px;
+    display: flex;
+
+
+}
+
+
+.gioithieu i {
+    font-size: xx-large;
+    color: black;
+    position: relative;
+    bottom: 7px;
+    margin-left: 10px;
+}
+
+.phukien {
+    display: flex;
+    margin-top: 50px;
+    margin-left: 20px;
+
+}
+
+.phukien i {
+    padding: 10px;
+    font-size: xx-large;
+    position: relative;
+    bottom: 17px;
+    color: rgb(0, 0, 0);
+}
+
+.spphukien {
+    display: flex;
+}
+
+.more {
+    text-align: center;
+    margin-top: 30px;
+
+}
+
+.more input {
+    border-radius: 5px;
+    height: 35px;
+    outline: none;
+    width: 120px;
+    cursor: pointer;
+    border: 1px solid grey;
+    background-color: white;
+    font-size: medium;
+}
+
+.more input:hover {
+    background: rgb(7, 149, 38);
+    color: white;
+    transform: scale(1.1);
+    transition: .5s ease-in-out;
+}
+
+footer {
+    margin-top: 50px;
+    margin-bottom: 20px;
+    width: 100%;
+    border-top: 1px solid gray;
+}
+
+.tuvan {
+    width: 100%;
+    text-align: center;
+}
+
+.tuvan h1 {
+    padding: 20px;
+}
+
+.tuvan input {
+    padding: 10px;
+    margin: 10px;
+    border-radius: 10px;
+    border: 1px solid grey;
+    background: white;
+    outline: none;
+    width: 250px;
+}
+
+.tuvan .send {
+    width: 100px;
+}
+
+.tuvan button {
+    height: 35px;
+    border-radius: 10px;
+    border: 1px;
+    color: white;
+    background: rgb(122, 122, 226);
+}
+
+.tuvan button:hover {
+    background: black;
+    cursor: pointer;
+    transition: .5s ease-in-out;
+    transform: scale(1.1);
+}
+
+.end {
+
+    width: 100%;
+    /* background: red; */
+    display: flex;
+}
+
+.end .about {
+    width: 20%;
+    padding: 30px;
+    line-height: 30px;
+    margin-left: 150px;
+
+}
+
+.end .about li:hover {
+    cursor: pointer;
+    color: blueviolet;
+}
+
+.end .thongtinbanquyen {
+    width: 25%;
+    padding: 30px;
+    line-height: 30px;
+    margin-left: 150px;
+}
+
+.end .thongtinbanquyen li:hover {
+    color: blueviolet;
+    cursor: pointer;
+}
+
+.end .hotro {
+    width: 25%;
+    padding: 30px;
+    line-height: 30px;
+}
+
+.end .hotro li:hover {
+    color: blueviolet;
+    cursor: pointer;
+}
+
+.banquyen {
+    width: 100%;
+    text-align: center;
+}
+
+.banquyen a {
+    color: black;
+}
+
+.hotro img {
+    width: 70%;
+
+}
+
+.menucon {
+    border-radius: 0px 0 10px 10px;
+    width: 200px;
+    position: relative;
+    right: 35px;
+    height: 210px;
+    bottom: 2px;
+    display: none;
+    background-color: rgb(130, 104, 66);
+}
+
+.menucon li {
+    padding-left: 20px;
+    width: 100%;
+    text-align: left;
+    position: relative;
+    right: 60px;
+    color: #fff;
+    margin-left: 50px;
+}
+
+.menu li:hover .menucon {
+    display: block;
+    transition: .1s;
+}
+
+
+.dot {
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+    cursor: pointer;
+}
+
+.active {
+    background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+    animation-name: fade;
+    animation-duration: 0.2s;
+}
+
+@keyframes fade {
+    from {
+        opacity: .4
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+    .text {
+        font-size: 11px
+    }
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+.map{
+    width: 90%;
+    margin-left: 70px;
+
+}
+.map-text{
+    text-align: center;
+}
