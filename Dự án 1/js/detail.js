@@ -95,3 +95,22 @@ function addCart(e, id, ten, gia, hinh) {
 
 
 
+function addToCart(productId, productName, productPrice) {
+  // Tạo một hàng mới trong hóa đơn
+  var newRow = document.createElement("tr");
+
+  // Tên sản phẩm
+  var productNameCell = document.createElement("td");
+  productNameCell.textContent = productName;
+  newRow.appendChild(productNameCell);
+
+  // Tổng cộng
+  var productPriceCell = document.createElement("td");
+  productPriceCell.textContent = productPrice + " vnđ";
+  newRow.appendChild(productPriceCell);
+
+  // Thêm hàng vào bảng hóa đơn
+  var hoaDonTable = document.getElementById("hoa-don-table");
+  var tbody = hoaDonTable.getElementsByTagName('tbody')[0];
+  tbody.appendChild(newRow);
+}
