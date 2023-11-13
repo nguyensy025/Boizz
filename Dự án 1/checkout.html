@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thanh toán</title>
+    <link rel="stylesheet" href="./css/checkout.css">
+
+
+
+    <!-- CSS
+	============================================ -->
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="assets/css/vendor/bootstrap.min.css">
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="assets/css/vendor/font.awesome.min.css">
+    <!-- Ionicons -->
+    <link rel="stylesheet" href="assets/css/vendor/ionicons.min.css">
+    <!-- Slick CSS -->
+    <link rel="stylesheet" href="assets/css/plugins/slick.min.css">
+    <!-- Animation -->
+    <link rel="stylesheet" href="assets/css/plugins/animate.min.css">
+    <!-- jQuery Ui -->
+    <link rel="stylesheet" href="assets/css/plugins/jquery-ui.min.css">
+    <!-- Nice Select -->
+    <link rel="stylesheet" href="assets/css/plugins/nice-select.min.css">
+    <!-- Magnific Popup -->
+    <link rel="stylesheet" href="assets/css/plugins/magnific-popup.css">
+
+    <!-- Vendor & Plugins CSS (Please remove the comment from below vendor.min.css & plugins.min.css for better website load performance and remove css files from the above) -->
+
+    <!-- <link rel="stylesheet" href="assets/css/vendor/vendor.min.css">
+    <link rel="stylesheet" href="assets/css/plugins/plugins.min.css"> -->
+
+    <!-- Main Style CSS (Please use minify version for better website load performance) -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <!-- <link rel="stylesheet" href="assets/css/style.min.css"> -->
+
+
+</head>
+
+
+
+
+<body>
+        <div class="head">
+            <a href="./index.html">
+                <div class="logo">
+                    <img width="90px" src="image/Cute Cat Grooming Logo.png" alt="">
+                </a>
+                    <h2> Thanh toán </h2>
+                </div>
+            <div class="top-right">
+                <a href="./dangnhap.html"><i class='bx bx-user'></i></a>
+                <a href="cart.html"><i class='bx bx-cart'></i></a>
+            </div>
+        </div>
+    
+        <nav>
+            <ul class="menu">
+                <li><a href="">Trang Chủ</a></li>
+                <li><a href="./lien-he.html">Liên Hệ</a></li>
+                <li>
+                    <a href="./sanpham.html">Sản Phẩm</a>
+                    <ul class="menucon">
+                        <li>Thức Ăn Cho Mèo</li>
+                        <li>Phụ Kiện Cho Mèo</li>
+                        <li>Thông Tin Các Giống Mèo</li>
+                        <li>Thời Trang Mèo</li>
+                    </ul>
+                </li>
+                <li><a href="">Blog</a></li>
+                <div class="search">
+                    <input type="text" placeholder="Bạn muốn tìm gì?">
+                    <a class="tk" href=""><i class='bx bx-search'></i></a>
+                </div>
+            </ul>
+        </nav>
+        <!-- //checkout từ đây -->
+        <div class="checkout-area">
+            <div class="container container-default-2 custom-container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="coupon-accordion">
+                            <h3>Bạn chưa có tài khoản? <a href="./dangnhap.html"><span id="showlogin">Nhấn vào đây để đăng nhập</span></a></h3>
+                            <div id="checkout-login" class="coupon-content">
+                                <div class="coupon-info">
+                                    <p class="coupon-text">Quisque gravida turpis sit amet nulla posuere lacinia. Cras sed est
+                                        sit amet ipsum luctus.</p>
+                                   
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-6 col-12">
+                        <form action="#">
+                            <div class="checkbox-form">
+                                <h3>Vui lòng nhập thông tin cá nhân và địa chỉ</h3>
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <div class="country-select clearfix">
+                                            <label>Quốc tịch <span class="required">*</span></label>
+                                            <select class="myniceselect nice-select wide rounded-0">
+                                                <option data-display="Bangladesh">Việt Nam</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="checkout-form-list">
+                                            <label>Tên<span class="required">*</span></label>
+                                            <input placeholder="" type="text">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="checkout-form-list">
+                                            <label>Họ và tên đệm<span class="required">*</span></label>
+                                            <input placeholder="" type="text">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="checkout-form-list">
+                                            <label>Số điện thoại<span class="required">*</span></label>
+                                            <input type="text">
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-12">
+                                        <div class="checkout-form-list">
+                                            <label>Tỉnh/Thành phố</label>
+                                            <input placeholder="" type="text">
+                                        </div>
+                                    </div>
+
+                                    <!-- <div class="col-md-12">
+                                        <div class="checkout-form-list">
+                                            <label><span class="required">*</span></label>
+                                            <input placeholder="" type="text">
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-12">
+                                        <div class="checkout-form-list">
+                                            <label>Địa chỉ cụ thể<span class="required">*</span></label>
+                                            <input placeholder="" type="text">
+                                        </div>
+                                    </div> -->
+
+
+                                    <!-- <div class="col-md-12">
+                                        <div class="checkout-form-list">
+                                            <label>Số nhà<span class="required">*</span></label>
+                                            <input placeholder="" type="text">
+                                        </div>
+                                    </div> -->
+                                    <div class="col-md-12">
+                                        <div class="checkout-form-list">
+                                            <label>Quận/Huyện, Phường/Xã<span class="required">*</span></label>
+                                            <input type="text">
+                                        </div>
+                                    </div>
+                                    
+                                    
+                                    <div class="col-md-12">
+                                        <div class="checkout-form-list">
+                                            <label>Địa chỉ cụ thể<span class="required">*</span></label>
+                                            <input placeholder="" type="text">
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="col-md-12">
+                                        <div class="checkout-form-list create-acc">
+                                            <input id="cbox" type="checkbox">
+                                            <label for="cbox">Tôi đồng ý với các điều khoản và chính sách của LittleCat</label>
+                                        </div>
+                                        <div id="cbox-info" class="checkout-form-list create-account">
+                                            <p class="mb-2">Create an account by entering the information below. If you are a returning customer please login at the top of the page.</p>
+                                            <label>Account password <span class="required">*</span></label>
+                                            <input placeholder="password" type="password">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="different-address">
+                                    <div class="ship-different-title">
+                                        <div>
+                                            <input id="ship-box" type="checkbox">
+                                            <label for="ship-box">Đồng ý với điều khoản thanh toán và hoàn trả hàng </label>
+                                        </div>
+                                    </div>
+                                    <div id="ship-box-info" class="row mt-2">
+                                        <div class="col-md-12">
+                                            <div class="myniceselect country-select clearfix">
+                                                <label>Country <span class="required">*</span></label>
+                                                <select class="myniceselect nice-select wide rounded-0">
+                                                    <option data-display="Bangladesh">Bangladesh</option>
+                                                    <option value="uk">London</option>
+                                                    <option value="rou">Romania</option>
+                                                    <option value="fr">French</option>
+                                                    <option value="de">Germany</option>
+                                                    <option value="aus">Australia</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-12">
+                                            <div class="checkout-form-list">
+                                                <label>First Name <span class="required">*</span></label>
+                                                <input placeholder="" type="text">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-12">
+                                            <div class="checkout-form-list">
+                                                <label>Last Name <span class="required">*</span></label>
+                                                <input placeholder="" type="text">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-12">
+                                            <div class="checkout-form-list">
+                                                <label>Company Name</label>
+                                                <input placeholder="" type="text">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-12">
+                                            <div class="checkout-form-list">
+                                                <label>Address <span class="required">*</span></label>
+                                                <input placeholder="Street address" type="text">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-12">
+                                            <div class="checkout-form-list">
+                                                <input placeholder="Apartment, suite, unit etc. (optional)" type="text">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-12">
+                                            <div class="checkout-form-list">
+                                                <label>Town / City <span class="required">*</span></label>
+                                                <input type="text">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-12">
+                                            <div class="checkout-form-list">
+                                                <label>State / County <span class="required">*</span></label>
+                                                <input placeholder="" type="text">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-12">
+                                            <div class="checkout-form-list">
+                                                <label>Postcode / Zip <span class="required">*</span></label>
+                                                <input placeholder="" type="text">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-12">
+                                            <div class="checkout-form-list">
+                                                <label>Email Address <span class="required">*</span></label>
+                                                <input placeholder="" type="email">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-12">
+                                            <div class="checkout-form-list">
+                                                <label>Phone <span class="required">*</span></label>
+                                                <input type="text">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="order-notes mt-3">
+                                        <div class="checkout-form-list checkout-form-list-2">
+                                            <label>Lưu ý cho người bán</label>
+                                            <textarea id="checkout-mess" cols="30" rows="10" placeholder=""></textarea>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="col-lg-6 col-12">
+                        <div class="your-order">
+                            <h3>Hóa đơn của bạn</h3>
+                            <div class="your-order-table table-responsive">
+                                <table class="table">
+                                    <thead>
+                                        <tr>
+                                            <th class="cart-product-name">Sản phẩm</th>
+                                            <th class="cart-product-total">Tổng cộng</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <!-- <tr class="cart_item">
+                                            <td class="cart-product-name"> Vestibulum suscipit<strong class="product-quantity">
+                                    × 1</strong></td>
+                                            <td class="cart-product-total text-center"><span class="amount">£165.00</span></td>
+                                        </tr>
+                                        <tr class="cart_item">
+                                            <td class="cart-product-name"> Vestibulum suscipit<strong class="product-quantity">
+                                    × 1</strong></td>
+                                            <td class="cart-product-total text-center"><span class="amount">£165.00</span></td>
+                                        </tr>
+                                    </tbody>
+                                    <tfoot>
+                                        <tr class="cart-subtotal">
+                                            <th>Cart Subtotal</th>
+                                            <td class="text-center"><span class="amount">£215.00</span></td>
+                                        </tr>
+                                        <tr class="order-total">
+                                            <th>Order Total</th>
+                                            <td class="text-center"><strong><span class="amount">£215.00</span></strong></td>
+                                        </tr>
+                                    </tfoot> -->
+                                </table>
+                            </div>
+                            <div class="payment-method">
+                                <div class="payment-accordion">
+                                    <div id="accordion">
+                                        <div class="card">
+                                            <div class="card-header" id="#payment-1">
+                                                <h5 class="panel-title mb-2">
+                                                    <a href="#" class="" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                                       Thanh toán khi nhận được hàng
+                                                    </a>
+                                                </h5>
+                                            </div>
+                                            <div id="collapseOne" class="collapse show" data-parent="#accordion">
+                                                <div class="card-body mb-2 mt-2">
+                                                    <p>Đơn hàng của bạn sẽ tới trong vòng 2-5 ngày, làm ơn thanh toán cho người giao hàng. Xin cảm ơn.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card">
+                                            <div class="card-header" id="#payment-2">
+                                                <h5 class="panel-title mb-2">
+                                                    <a href="#" class="collapsed" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                                        Thanh toán trực tuyến
+                                                    </a>
+                                                </h5>
+                                            </div>
+                                            <div id="collapseTwo" class="collapse" data-parent="#accordion">
+                                                <div class="card-body mb-2 mt-2">
+                                                    <p>Make your payment directly into our bank account. Please use your Order ID as the payment reference. Your order won’t be shipped until the funds have cleared in our account.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        
+                                            <div id="collapseThree" class="collapse" data-parent="#accordion">
+                                                <div class="card-body mb-2 mt-2">
+                                                    <p>Make your payment directly into our bank account. Please use your Order ID as the payment reference. Your order won’t be shipped until the funds have cleared in our account.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="order-button-payment">
+                                        <input value="Đặt hàng" type="submit">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- kết thúc checkout form -->
+</body>
+</html>
