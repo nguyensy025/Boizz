@@ -226,15 +226,18 @@ button,
 /*    02 - Global - Helper
 /*----------------------------------------*/
 /*--- Custom Container ---*/
-@media (min-width: 1501px) {
+@media (min-width: 1000px) {
   .container-default {
-    max-width: 1480px;
+    max-width: 1024px;
+  
   }
 }
 
-@media (min-width: 1501px) {
+@media (min-width: 1000px) {
   .container-default-2 {
-    max-width: 1140px;
+    max-width: 70%;
+    margin-left: 400px;
+
   }
 }
 
@@ -244,7 +247,7 @@ button,
   padding-left: 15px;
 }
 
-.container.custom-area .row {
+/* .container.custom-area .row {
   margin-right: -15px;
   margin-left: -15px;
 }
@@ -252,7 +255,7 @@ button,
 .container.custom-area .col-custom {
   padding-right: 15px;
   padding-left: 15px;
-}
+} */
 
 /*-- Boxed Home Layout --*/
 .boxed-layout {
@@ -3701,8 +3704,10 @@ button,
   margin: 0 0 30px;
   padding: 16px 32px 16px 20px;
   position: relative;
-  width: auto;
+  width: 400px;
   text-transform: none;
+  
+  margin-left: 22px;
 }
 
 @media (max-width: 479px) {
@@ -3849,6 +3854,7 @@ button,
   padding-bottom: 10px;
   text-transform: uppercase;
   width: 100%;
+  
 }
 
 @media (max-width: 479px) {
@@ -3859,6 +3865,10 @@ button,
 
 .checkbox-form .country-select {
   margin-bottom: 25px;
+}
+.checkbox-form{
+  width: 130%;
+  margin-left: 24px;
 }
 
 .checkbox-form .country-select .myniceselect.nice-select span {
@@ -5824,4 +5834,104 @@ button,
   .breadcrumbs-area {
     padding: 50px 0px;
   }
+}footer {
+  margin-top: 50px;
+  margin-bottom: 20px;
+  width: 100%;
+  border-top: 1px solid gray;
+}
+
+.tuvan {
+  width: 100%;
+  text-align: center;
+}
+
+.tuvan h1 {
+  padding: 20px;
+}
+
+.tuvan input {
+  padding: 10px;
+  margin: 10px;
+  border-radius: 10px;
+  border: 1px solid grey;
+  background: white;
+  outline: none;
+  width: 250px;
+}
+
+.tuvan .send {
+  width: 100px;
+}
+
+.tuvan button {
+  height: 35px;
+  border-radius: 10px;
+  border: 1px;
+  color: white;
+  background: rgb(122, 122, 226);
+}
+
+.tuvan button:hover {
+  background: black;
+  cursor: pointer;
+  transition: .5s ease-in-out;
+  transform: scale(1.1);
+}
+
+.end {
+
+  width: 100%;
+  /* background: red; */
+  display: flex;
+}
+
+.end .about {
+  width: 20%;
+  padding: 30px;
+  line-height: 30px;
+  margin-left: 150px;
+
+}
+
+.end .about li:hover {
+  cursor: pointer;
+  color: blueviolet;
+}
+
+.end .thongtinbanquyen {
+  width: 25%;
+  padding: 30px;
+  line-height: 30px;
+  margin-left: 150px;
+}
+
+.end .thongtinbanquyen li:hover {
+  color: blueviolet;
+  cursor: pointer;
+}
+
+.end .hotro {
+  width: 25%;
+  padding: 30px;
+  line-height: 30px;
+}
+
+.end .hotro li:hover {
+  color: blueviolet;
+  cursor: pointer;
+}
+
+.banquyen {
+  width: 100%;
+  text-align: center;
+}
+
+.banquyen a {
+  color: black;
+}
+
+.hotro img {
+  width: 70%;
+
 }
