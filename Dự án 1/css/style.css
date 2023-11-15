@@ -508,7 +508,8 @@ footer {
 }
 .map{
     /* width: 90%; */
-    margin-left: 70px;
+    margin-left: 80px;
+    width: 90%;
 
 }
 .map-text{

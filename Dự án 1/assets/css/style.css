@@ -4069,7 +4069,7 @@ button,
 }
 
 .order-button-payment input {
-  background: #1B1B1C;
+  background: #826842;
   border: medium none;
   color: #ffffff;
   font-size: 17px;
@@ -4085,6 +4085,9 @@ button,
   cursor: pointer;
 }
 
+.order-button-payment input:hover {
+  background: #453722; /* Change this to the desired hover color */
+}
 /*----------------------------------------*/
 /*    14 - Pages - Wishlist
 /*----------------------------------------*/
