@@ -29,8 +29,11 @@ function napsp() {
 }
 
 function suasoluong(index, sl) {
-  cartItems[index].soluong = sl;
-  napsp();
+  // Ensure that the input value is a positive number before updating the quantity
+  if (!isNaN(sl) && sl > 0) {
+      cartItems[index].soluong = sl;
+      napsp();
+  }
 }
 
 function xoa(index) {

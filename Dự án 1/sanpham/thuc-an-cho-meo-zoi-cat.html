@@ -71,10 +71,10 @@
       
       <br>
       <div class="soluong">
-        <input type="number" placeholder="Số Lượng" step="1" min="1" value="1">
+        <input id="inputNumber" type="text" placeholder="Số Lượng" pattern="[1-9][0-9]*" oninput="validateInput()" required>
+        <p id="errorMessage" style="display: none; color: red;">Số không hợp lệ, vui lòng nhập số dương.</p>
       </div>
-    </div>
-
+      
 
 
   </article>

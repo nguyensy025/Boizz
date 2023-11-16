@@ -114,3 +114,15 @@ function addToCart(productId, productName, productPrice) {
   var tbody = hoaDonTable.getElementsByTagName('tbody')[0];
   tbody.appendChild(newRow);
 }
+
+function validateInput() {
+  var input = document.getElementById('inputNumber');
+  var errorMessage = document.getElementById('errorMessage');
+
+  if (!/^\d+$/.test(input.value) || parseInt(input.value) < 1) {
+    errorMessage.style.display = 'block';
+  } else {
+    errorMessage.style.display = 'none';
+  }
+}
+
