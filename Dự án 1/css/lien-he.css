@@ -87,7 +87,7 @@
 
 .danhmuc1{
     margin: 10px;
-    padding: 100px;
+    padding: 110px;
     margin-left: 143px;
 }
 
@@ -128,6 +128,7 @@
 }
 .list button {
   margin-bottom: 20px; /* Thêm khoảng cách dưới mỗi nút */
+  margin-left: 19px;
 }
 .list{
   margin: 1px;
