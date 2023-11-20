@@ -165,16 +165,24 @@ header .slideshow-container img {
 
 article {
     display: flex;
+    margin-left: 110px;
+    margin-right: 110px
 }
 
 .khung {
     margin-top: 50px;
-    margin-left: 10px;
+    margin-left: auto;
     width: 22.5%;
-    height: 400px;
-    border-radius: 10px;
+    height: 444px;
+    /* border-radius: 10px; */
     padding: 10px;
     border: 1px solid gray;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+.khung:hover{
+    /* background-color: lightblue; */
+    border-radius: 5px;
+    box-shadow: 0 0 20px rgba(130, 95, 25, 2);
 }
 
 .khung .hinh {
@@ -185,7 +193,7 @@ article {
 
 .hinh img {
     width: 100%;
-    height: 100%;
+    height: 85%;
     transition: 0.1s ease-in-out;
 
 }
@@ -201,7 +209,7 @@ article {
 }
 
 .nutan input {
-    border-radius: 5px;
+    /* border-radius: 5px; */
     outline: none;
     height: 30px;
     margin-left: 15px;
@@ -211,10 +219,10 @@ article {
 }
 
 .nutan input:hover {
-    background-color: rgb(35, 145, 18);
+    background-color: rgb(198, 167, 41);
     box-shadow: none;
     color: white;
-    transition: .4s ease-in-out;
+    transition: .2s ease-in-out;
 }
 
 .danhmuc {
@@ -233,14 +241,16 @@ aside {
 }
 
 .thucan {
-    width: 100%;
+    margin-left: 110px;
+    margin-right: 110px;
     display: flex;
 }
 
 .hot {
-    padding-left: 20px;
+    padding-left: 60px;
     height: 10px;
     display: flex;
+    font-size: larger;
 }
 
 .hot i {
@@ -252,11 +262,10 @@ aside {
 }
 
 .gioithieu {
-    margin-left: 20px;
+    margin-left: 50px;
     margin-top: 50px;
     display: flex;
-
-
+    font-size: larger;
 }
 
 
@@ -271,7 +280,7 @@ aside {
 .phukien {
     display: flex;
     margin-top: 50px;
-    margin-left: 20px;
+    margin-left: 50px;
 
 }
 
@@ -285,6 +294,8 @@ aside {
 
 .spphukien {
     display: flex;
+    margin-left: 110px;
+    margin-right: 110px;
 }
 
 .more {
