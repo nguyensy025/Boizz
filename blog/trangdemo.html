@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>trang demo</title>
+</head>
+<body>
+    <form method="post" action="">
+        Nhập số lượng: <input type="number" name="so_luong" min="1"><br>
+        <input type="submit" value="Submit">
+    </form>
+    
+    <?php
+    if ($_SERVER["REQUEST_METHOD"] == "POST") {
+        $so_luong = $_POST['so_luong'];
+    
+        if ($so_luong < 1) {
+            echo "Vui lòng nhập số lượng lớn hơn hoặc bằng 1.";
+        } else {
+            echo "Số lượng bạn đã nhập là: " . $so_luong;
+        }
+    }
+    ?>
+</body>
+</html>

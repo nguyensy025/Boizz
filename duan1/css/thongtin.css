@@ -332,8 +332,8 @@ article {
     cursor: pointer;
     color: white;
     background: gray;
-    transform: scale(1.1);
-    transition: .5s ease-in-out;
+    /* transform: scale(1.1);
+    transition: .5s ease-in-out; */
 }
 
 .uudiem {

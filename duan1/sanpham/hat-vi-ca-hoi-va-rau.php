@@ -10,13 +10,13 @@
   <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
   <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
   <link rel="stylesheet" href="../css/sanpham.css">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 </head>
+
 <body>
   <div class="head">
     <a href="../index.html">
       <div class="logo">
-          <img width="90px" src="../image/Cute Cat Grooming Logo.png" alt="">
+          <img width="90px" src=".//image/Cute Cat Grooming Logo.png" alt="">
       </a>
           <h2> LittleCat </h2>
     <div class="top-right">
@@ -50,31 +50,43 @@
   <article>
     <div class="khung">
       <div class="hinh">
-        <img src="../image/1.png" alt="anhsp">
+        <img src="../image/thucan1.jpg" alt="anhsp">
       </div>
       <br>
     </div>
     <div class="thongtin">
-      <h3>Thức ăn cho mèo Zoi Cat </h3>
+      <h3>Hạt vị cá hồi và rau củ dành cho mèo</h3>
       <span> Giá: 150.000 vnđ</span> <br>
-      <span>Lượt Xem : 199</span> <i class="ri-eye-line"></i>
+      <span>Lượt Xem : 323</span> <i class="ri-eye-line"></i>
       <br>
-      <input type="button" value="Thêm Vào Giỏ Hàng" onclick="addCart(this, 3, 'Thức ăn cho mèo Zoi Cat', 150000, 'image/1.png', 1)">
-      <input type="button" value="Mua Ngay">
-
-
-  <div id="popup" class="popup">
-    Đã thêm vào giỏ hàng thành công
-</div>
-
-      
-      
-      <br>
-      <div class="soluong">
-        <input id="inputNumber" type="text" placeholder="Số Lượng" pattern="[1-9][0-9]*" oninput="validateInput()" required>
-        <p id="errorMessage" style="display: none; color: red;">Số không hợp lệ, vui lòng nhập số dương.</p>
+      <!-- <input type="button" value="Thêm Vào Giỏ Hàng" onclick="addCart(this, 5, 'Hạt vị cá hồi và rau củ dành cho mèo', 150000, 'image/thucan1.jpg', 1)">
+      <input type="button" value="Mua Ngay"> -->
+      <form method="post" action="">
+        Nhập số lượng: <input type="number" name="so_luong" min="1"><br>
+        <input type="submit" value="Thêm vào giỏ hàng">
+    </form>
+    
+    <?php
+    if ($_SERVER["REQUEST_METHOD"] == "POST") {
+        $so_luong = $_POST['so_luong'];
+    
+        if ($so_luong < 1) {
+            echo "Vui lòng nhập số lượng lớn hơn hoặc bằng 1.";
+        } else {
+          echo "Đã thêm vào giỏ hàng thành công!";
+        }
+    }
+    ?>
+      <div id="popup" class="popup">
+        Đã thêm vào giỏ hàng thành công
       </div>
       
+      <br>
+      <!-- <div class="soluong">
+        <input type="number" placeholder="Số Lượng" step="1" min="1" value="1">
+      </div>
+    </div> -->
+
 
 
   </article>
