@@ -10,8 +10,8 @@
   <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
   <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
   <link rel="stylesheet" href="../css/sanpham.css">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 </head>
+
 <body>
   <div class="head">
     <a href="../index.html">
@@ -50,33 +50,20 @@
   <article>
     <div class="khung">
       <div class="hinh">
-        <img src="../image/1.png" alt="anhsp">
+        <img src="../image/catvs.jpg" alt="anhsp">
       </div>
       <br>
     </div>
     <div class="thongtin">
-      <h3>Thức ăn cho mèo Zoi Cat </h3>
-      <span> Giá: 150.000 vnđ</span> <br>
-      <span>Lượt Xem : 199</span> <i class="ri-eye-line"></i>
+      <h3>Cát vệ sinh Aatas</h3>
+      <span> Giá: 239.000 vnđ</span> <br>
+      <span>Lượt Xem : 221</span> <i class="ri-eye-line"></i>
       <br>
-      <input type="button" value="Thêm Vào Giỏ Hàng" onclick="addCart(this, 3, 'Thức ăn cho mèo Zoi Cat', 150000, 'image/1.png', 1)">
-      <input type="button" value="Mua Ngay">
-
-
-  <div id="popup" class="popup">
-    Đã thêm vào giỏ hàng thành công
-</div>
-
-      
-      
-      <br>
-      <!-- <div class="soluong">
-        <input id="inputNumber" type="text" placeholder="Số Lượng" pattern="[1-9][0-9]*" oninput="validateInput()" required>
-        <p id="errorMessage" style="display: none; color: red;">Số không hợp lệ, vui lòng nhập số dương.</p>
-      </div> -->
+      <!-- <input type="button" value="Thêm Vào Giỏ Hàng" onclick="addCart(this, 4, 'Cát vệ sinh Aatas', 239000, 'image/catvs.jpg', 1)">
+      <input type="button" value="Mua Ngay"> -->
       <form method="post" action="">
         Nhập số lượng: <input type="number" name="so_luong" min="1"><br>
-        <input type="submit" value="Submit">
+        <input type="submit" value="Thêm vào giỏ hàng">
     </form>
     
     <?php
@@ -86,13 +73,20 @@
         if ($so_luong < 1) {
             echo "Vui lòng nhập số lượng lớn hơn hoặc bằng 1.";
         } else {
-            echo "Số lượng bạn đã nhập là: " . $so_luong;
+          echo "Đã thêm vào giỏ hàng thành công!";
         }
     }
     ?>
-    
-    
- 
+      <div id="popup" class="popup">
+        Đã thêm vào giỏ hàng thành công
+      </div>
+      
+      <br>
+      <!-- <div class="soluong">
+        <input type="number" placeholder="Số Lượng" step="1" min="1" value="1">
+      </div>
+    </div> -->
+
 
 
   </article>

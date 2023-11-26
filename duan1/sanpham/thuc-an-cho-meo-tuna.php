@@ -28,7 +28,7 @@
   <nav>
 
     <div class="menu">
-      <li><a href="../index.html">Trang Chủ </a></li>
+      <li><a href="./index.html">Trang Chủ </a></li>
       <li><a href="#">Liên Hệ</a></li>
       <li><a href="#">Sản Phẩm</a>
 
@@ -50,27 +50,43 @@
   <article>
     <div class="khung">
       <div class="hinh">
-        <img src="../image/catvs.jpg" alt="anhsp">
+        <img src="../image/thucan5.webp" alt="anhsp">
       </div>
       <br>
     </div>
     <div class="thongtin">
-      <h3>Cát vệ sinh Aatas</h3>
-      <span> Giá: 239.000 vnđ</span> <br>
-      <span>Lượt Xem : 221</span> <i class="ri-eye-line"></i>
+      <h3>Thức ăn cho mèo Tuna</h3>
+      <span> Giá: 150.000 vnđ</span> <br>
+      <span>Lượt Xem : 199</span> <i class="ri-eye-line"></i>
       <br>
-      <input type="button" value="Thêm Vào Giỏ Hàng" onclick="addCart(this, 4, 'Cát vệ sinh Aatas', 239000, 'image/catvs.jpg', 1)">
-      <input type="button" value="Mua Ngay">
-      
+      <!-- <input type="button" value="Thêm Vào Giỏ Hàng" onclick="addCart(this, 1, 'Thức ăn cho mèo Tuna', 150000, 'image/thucan5.webp', 1)">
+      <input type="button" value="Mua Ngay"> -->
+      <form method="post" action="">
+        Nhập số lượng: <input type="number" name="so_luong" min="1"><br>
+        <input type="submit" value="Thêm vào giỏ hàng">
+    </form>
+    
+    <?php
+    if ($_SERVER["REQUEST_METHOD"] == "POST") {
+        $so_luong = $_POST['so_luong'];
+    
+        if ($so_luong < 1) {
+            echo "Vui lòng nhập số lượng lớn hơn hoặc bằng 1.";
+        } else {
+          echo "Đã thêm vào giỏ hàng thành công!";
+        }
+    }
+    ?>
+      <br>
+
       <div id="popup" class="popup">
         Đã thêm vào giỏ hàng thành công
       </div>
       
-      <br>
-      <div class="soluong">
+      <!-- <div class="soluong">
         <input type="number" placeholder="Số Lượng" step="1" min="1" value="1">
       </div>
-    </div>
+    </div> -->
 
 
 
