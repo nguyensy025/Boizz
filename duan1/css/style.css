@@ -532,28 +532,14 @@ footer {
     text-align: center;
 }
 
-.rating {
-    unicode-bidi: bidi-override;
-    direction: rtl;
-    text-align: center;
-  }
-  .rating > .star {
-    display: inline-block;
-    position: relative;
-    width: 1.1em;
-    font-size: 2em;
-    color: #ccc;
-    cursor: pointer;
-  }
-  .rating > .star:hover:before,
-  .rating > .star:hover ~ .star:before {
-    content: "\2605";
-    position: absolute;
-    color: #ffcc00;
-  }
-  .rating > .star[data-value="1"]:before {
-    content: "\2605";
-    position: absolute;
-    color: #ffcc00;
-  }
-  
+.nutan .rate {
+    direction: rtl; /* Đảo ngược hướng của văn bản sang phải sang trái */
+}
+
+.nutan .rate span {
+    float: left; /* Căn lề các sao sang bên trái */
+    margin-left: 10%;
+}
+
+
+
