@@ -11,6 +11,7 @@
   <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
   <link rel="stylesheet" href="../css/sanpham.css">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+  
 </head>
 <body>
   <div class="head">
@@ -97,6 +98,7 @@
 
   </article>
 
+  
   <aside>
     <h3>Thông Tin Sản Phẩm</h3>
     <div class="uudiem">
@@ -159,6 +161,7 @@
     </div>
 
   </aside>
+
 
   <footer>
     <div class="tuvan">
