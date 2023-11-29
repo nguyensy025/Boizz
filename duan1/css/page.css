@@ -1,0 +1,152 @@
+@font-face {
+    font-family: 'Rocher';
+    src: url(https://assets.codepen.io/9632/RocherColorGX.woff2);
+}
+
+* {
+    margin: 0;
+    list-style: none;
+    text-decoration: none;
+    font-family: sans-serif;
+}
+.body{
+    height: 100%;
+    margin: 0;
+    display: block;
+}
+
+.head {
+    height: 90px;
+    background-color: burlywood;
+}
+
+.logo {
+    width: 25%;
+    height: 100%;
+    justify-content: space-evenly;
+    display: flex;
+}
+
+.logo h2 {
+    line-height: 90px;
+    font-variant: inherit;
+    color: white;
+    font-family: 'Rocher';
+}
+
+.logo img {
+    transform: scale(1.5);
+}
+
+nav {
+    width: 100%;
+}
+
+.top-right {
+    position: absolute;
+    right: 20px;
+    top: 30px;
+    width: 100px;
+    display: flex;
+    justify-content: space-between;
+    font-size: xx-large;
+    color: rgb(0, 0, 0);
+
+}
+
+.top-right a {
+    color: white;
+}
+
+.menu {
+    background-color: rgb(130, 104, 66);
+
+    width: 97.35%;
+    height: 50px;
+    line-height: 50px;
+    display: flex;
+    clear: both;
+}
+.menucon {
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    z-index: 999; /* Đặt z-index lớn hơn slide để menu hiển thị phía trước */
+    white-space: nowrap; /* Ngăn các mục menu con xuống dòng */
+}
+
+.menucon li {
+    margin: 5px 0; /* Điều chỉnh khoảng cách dọc giữa các mục menu con */
+}
+
+.menu li:hover .menucon {
+    display: block;
+}
+
+.menu li {
+    width: 10%;
+    margin-left: 49px;
+    text-align: center;
+}
+
+.menu li a {
+    color: #fff;
+    font-size: x-large;
+    font-family: monospace;
+}
+
+.menu li:hover {
+    background-color: rgb(197, 172, 102);
+    border-radius: 20px;
+    transition: .3s;
+    
+}
+
+.menu .search input {
+    margin-left: 300px;
+    border: 1px;
+    border-radius: 10px;
+    height: 30px;
+    width: 300px;
+    outline: none;
+    padding-left: 10px;
+}
+
+.search .tk {
+    background-color: white;
+    right: 25px;
+    bottom: -3px;
+    color: gray;
+    position: relative;
+}
+
+header {
+    width: 100%;
+    height: 400px;
+    margin-bottom: 100px;
+    margin-top: 70px;
+}
+.main--content{
+    width: 80%;
+    margin: 70px;
+}
+.gioithieu1{
+    margin-left: 4.1%;
+}
+.noidung{
+    margin-left: 4.1%;
+    line-height: 150%;
+}
+.hinhanh{
+    display: flex;
+    justify-content: center;
+  }
+  
+  .hinhanh img {
+    max-width: 90%;
+    /* Nếu bạn muốn hình ảnh nằm giữa theo chiều ngang */
+    margin: 0 auto;
+    display: block;
+  }

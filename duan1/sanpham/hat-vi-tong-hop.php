@@ -39,7 +39,7 @@
           <li>Thời Trang Mèo</li>
         </ul>
       </li>
-      <li><a href="#">Blog</a></li>
+      <li><a href="./blog.html">Blog</a></li>
       <div class="search">
         <input type="text" placeholder="Bạn muốn tìm gì ?"><a class="tk" href=""><i class='bx bx-search'></i></a>
       </div>
