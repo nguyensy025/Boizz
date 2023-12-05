@@ -99,7 +99,7 @@ nav {
 
 .menu li:hover {
     background-color: rgb(197, 172, 102);
-    border-radius: 20px;
+    border-radius: 10px;
     transition: .3s;
     
 }
@@ -177,7 +177,7 @@ article {
 .khung {
     margin-top: 50px;
     margin-left: auto;
-    width: 22.5%;
+    width: 23%;
     height: 444px;
     /* border-radius: 10px; */
     padding: 10px;
@@ -431,10 +431,10 @@ footer {
 
 .menucon {
     border-radius: 0px 0 10px 10px;
-    width: 200px;
+    width: 220px;
     position: relative;
     right: 35px;
-    height: 210px;
+    height: 231px;
     bottom: 2px;
     display: none;
     background-color: rgb(130, 104, 66);
@@ -442,7 +442,7 @@ footer {
 
 .menucon li {
     padding-left: 20px;
-    width: 100%;
+    width: 110%;
     text-align: left;
     position: relative;
     right: 60px;
