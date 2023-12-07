@@ -62,7 +62,7 @@
       <!-- <input type="button" value="Thêm Vào Giỏ Hàng" onclick="addCart(this, 5, 'Hạt vị cá hồi và rau củ dành cho mèo', 150000, 'image/thucan1.jpg', 1)">
       <input type="button" value="Mua Ngay"> -->
       <form method="post" action="">
-        Nhập số lượng: <input type="number" name="so_luong" min="1"><br>
+        Nhập số lượng: <input type="number" name="so_luong" min="1" value="1"><br>
         <input type="submit" value="Thêm vào giỏ hàng">
     </form>
     

@@ -64,7 +64,7 @@
       <input type="button" value="Mua Ngay"> -->
 
       <form method="post" action="">
-        Nhập số lượng: <input type="number" name="so_luong" min="1"><br>
+        Nhập số lượng: <input type="number" name="so_luong" min="1" value="1"><br>
         <input type="submit" value="Thêm vào giỏ hàng">
     </form>
     
