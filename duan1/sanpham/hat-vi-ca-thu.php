@@ -9,7 +9,7 @@
   <link rel="stylesheet" href="../css/thongtin.css">
   <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
   <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
-  <link rel="stylesheet" href="../css/sanpham.css">
+  <!-- <link rel="stylesheet" href="../css/sanpham.css"> -->
 </head>
 
 <body>
