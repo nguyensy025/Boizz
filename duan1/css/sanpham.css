@@ -68,6 +68,7 @@ h1{
 .head {
     height: 90px;
     background-color: burlywood;
+    width: 100%;
 }
 
 .logo {
@@ -111,7 +112,7 @@ nav {
 .menu {
     background-color: rgb(130, 104, 66);
 
-    width: 97.35%;
+    width: 97,4%;
     height: 50px;
     line-height: 50px;
     display: flex;
@@ -261,13 +262,14 @@ article {
 .thongtin {
     font-family: monospace;
     font-size: large;
+    margin-top: -20px;
 }
 
 .nutan input {
     /* border-radius: 5px; */
     outline: none;
     height: 30px;
-    margin-left: 15px;
+    /* margin-left: 15px; */
     border: 1px solid green;
     background-color: white;
     cursor: pointer;
