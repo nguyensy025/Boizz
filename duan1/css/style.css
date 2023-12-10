@@ -211,6 +211,7 @@ article {
 .thongtin {
     font-family: monospace;
     font-size: large;
+    margin-top: -15px;
 }
 
 .nutan input {
