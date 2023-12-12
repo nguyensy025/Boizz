@@ -1,146 +1,219 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Đăng Ký</title>
-  <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="./css/dangky.css">
-  <script>
-    function checkfrom() {
-      var a = document.getElementById("Tên tài khoản").value;
-      var b = document.getElementById("Email").value;
-      var c = document.getElementById("Số Điện Thoại").value;
-      var d = document.getElementById("Mật Khẩu").value;
-      
-
-      if (a == "") {
-        alert("Tên tài khoản không được để trống.");
-        return false;
-      }
-      if (b == "") {
-        alert("Email không được để trống.");
-        return false;
-      }
-        if (c == "") {
-        alert("Số Điện Thoại không được để trống.");
-        return false;
-        }
-        if (d == "") {
-        alert("Mật Khẩu không được để trống.");
-        return false;
-      }  
-      else {
-        alert("Đăng ký thành công.")
-        return true;
-      }
-    }
-  </script>
-</head>
+	<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Đăng Ký</title>
+	
+		<meta charset="utf-8">
+		<title>EShopper - Bootstrap Shop Template</title>
+		<meta content="width=device-width, initial-scale=1.0" name="viewport">
+		<meta content="Free HTML Templates" name="keywords">
+		<meta content="Free HTML Templates" name="description">
+	
+		<!-- Favicon -->
+		<link href="img/favicon.ico" rel="icon">
+	
+		<!-- Google Web Fonts -->
+		<link rel="preconnect" href="https://fonts.gstatic.com">
+		<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet"> 
+	
+		<!-- Font Awesome -->
+		<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+	
+		<!-- Libraries Stylesheet -->
+		<link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+	
+		<!-- Customized Bootstrap Stylesheet -->
+		<link href="css/style.css" rel="stylesheet">
+	</head>
 
 <body>
-  <div class="head">
-    <a href="./index.html">
-      <div class="logo">
-        <img src="image/Cute Cat Grooming Logo.png" alt="">
-
-        <h2> LittleCat </h2>
-      </div>
-    </a>
-    <div class="top-right">
-      <a href="dangnhap.html"><i class='bx bx-user'></i></a>
-      <a href="cart.html"><i class='bx bx-cart'></i></a>
+<body>
+    <!-- Topbar Start -->
+    <div class="container-fluid">
+        <div class="row bg-secondary py-2 px-xl-5">
+            <div class="col-lg-6 d-none d-lg-block">
+                <div class="d-inline-flex align-items-center">
+                    <a class="text-dark" href="">FAQs</a>
+                    <span class="text-muted px-2">|</span>
+                    <a class="text-dark" href="">Help</a>
+                    <span class="text-muted px-2">|</span>
+                    <a class="text-dark" href="">Support</a>
+                </div>
+            </div>
+            <div class="col-lg-6 text-center text-lg-right">
+                <div class="d-inline-flex align-items-center">
+                    <a class="text-dark px-2" href="">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a class="text-dark px-2" href="">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a class="text-dark px-2" href="">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                    <a class="text-dark px-2" href="">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a class="text-dark pl-2" href="">
+                        <i class="fab fa-youtube"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="row align-items-center py-3 px-xl-5">
+            <div class="col-lg-3 d-none d-lg-block">
+                <a href="" class="text-decoration-none">
+                    <h1 class="m-0 display-5 font-weight-semi-bold"><img width="30%" src="./img/Cute Cat Grooming Logo.png" alt="">Little Cat</h1>
+                </a>
+            </div>
+            
+        </div>
     </div>
-  </div>
-  <div class="khung">
-    <form class="form" onsubmit="return checkfrom()" action="index.html">
-      <p id="heading">ĐĂNG KÝ</p>
-      <div class="field">
-        <svg class="input-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-          viewBox="0 0 16 16">
-          <path
-            d="M13.106 7.222c0-2.967-2.249-5.032-5.482-5.032-3.35 0-5.646 2.318-5.646 5.702 0 3.493 2.235 5.708 5.762 5.708.862 0 1.689-.123 2.304-.335v-.862c-.43.199-1.354.328-2.29.328-2.926 0-4.813-1.88-4.813-4.798 0-2.844 1.921-4.881 4.594-4.881 2.735 0 4.608 1.688 4.608 4.156 0 1.682-.554 2.769-1.416 2.769-.492 0-.772-.28-.772-.76V5.206H8.923v.834h-.11c-.266-.595-.881-.964-1.6-.964-1.4 0-2.378 1.162-2.378 2.823 0 1.737.957 2.906 2.379 2.906.8 0 1.415-.39 1.709-1.087h.11c.081.67.703 1.148 1.503 1.148 1.572 0 2.57-1.415 2.57-3.643zm-7.177.704c0-1.197.54-1.907 1.456-1.907.93 0 1.524.738 1.524 1.907S8.308 9.84 7.371 9.84c-.895 0-1.442-.725-1.442-1.914z">
-          </path>
-        </svg>
-        <input autocomplete="off" id="Tên tài khoản" placeholder="Tên tài khoản" class="input-field" type="text">
-      </div>
-      <div class="field">
-        <svg class="input-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-          viewBox="0 0 16 16">
-          <path
-            d="M8 1a2 2 0 0 1 2 2v4H6V3a2 2 0 0 1 2-2zm3 6V3a3 3 0 0 0-6 0v4a2 2 0 0 0-2 2v5a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2z">
-          </path>
-        </svg>
-    </svg>
-    <input autocomplete="off" id="Email" placeholder="Nhập Email" class="input-field" type="text">
-  </div>
-  <div class="field">
-    <svg class="input-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-      viewBox="0 0 16 16">
-      <path
-        d="M8 1a2 2 0 0 1 2 2v4H6V3a2 2 0 0 1 2-2zm3 6V3a3 3 0 0 0-6 0v4a2 2 0 0 0-2 2v5a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2z">
-      </path>
-    </svg>
-</svg>
-<input autocomplete="off" id="Số Điện Thoại" placeholder="Nhập Số Điện Thoại" class="input-field" type="text">
-</div>
-<div class="field">
-<svg class="input-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-  viewBox="0 0 16 16">
-  <path
-    d="M8 1a2 2 0 0 1 2 2v4H6V3a2 2 0 0 1 2-2zm3 6V3a3 3 0 0 0-6 0v4a2 2 0 0 0-2 2v5a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2z">
-  </path>
-</svg>
-</svg>
-<input autocomplete="off" id="Mật Khẩu" placeholder="Nhập Mật Khẩu" class="input-field" type="text">
-</div>
-<div class="field">
-<svg class="input-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-  viewBox="0 0 16 16">
-  <path
-    d="M8 1a2 2 0 0 1 2 2v4H6V3a2 2 0 0 1 2-2zm3 6V3a3 3 0 0 0-6 0v4a2 2 0 0 0-2 2v5a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2z">
-  </path>
-</svg>
+	<form method="post" onsubmit="myaction.collect_data(event, 'signup')">
+		<div class="col-md-8 col-lg-4 border rounded mx-auto mt-5 p-4 shadow">
+			
+			<div class="h2">Đăng Ký</div>
+			
+			<div class="input-group mt-3">
+			  <span class="input-group-text" id="basic-addon1"><i class="bi bi-person-circle"></i></span>
+			  <input name="firstname" type="text" class="form-control p-3" placeholder="Tên" >
+			</div>
+			<div><small class="js-error js-error-firstname text-danger"></small></div>
 
-        <input placeholder="Nhập Lại Mật khẩu" id="password" class="input-field" type="password">
-        
-      </div>
-      <div class="field">
-      <input type="checkbox" class="my-checkbox">Tôi Đồng Ý Với Các Điều Khoản Trên
-    </div>
-      
-      
-      <style>
-          input[type="checkbox"] {
-          width: 15px;
-          height: 15px;
-          border: 1px solid black;
-        }
-        
-        input[type="checkbox"]:checked {
-          background-color: green;
-        }
-      </style>
-      <script>
-          document.getElementById('my-checkbox').checked = false;
-          const checkboxValue = document.getElementById('my-checkbox').value;
-          
-      </script>
-      
-      <div class="btn">
-          <button class="button1"
-          type="submit">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Đăng ký&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</button>
-        <button class="button2"><a href="dangky.html">Đăng ký lại tài khoản </a></button>
-      </div>
-      <button class="button3">Quên mật khẩu</button>
-  </div>
-  </form>
+			<div class="input-group mt-3">
+			  <span class="input-group-text" id="basic-addon1"><i class="bi bi-person-square"></i></span>
+			  <input name="lastname" type="text" class="form-control p-3" placeholder="Họ" >
+			</div>
+			<div><small class="js-error js-error-lastname text-danger"></small></div>
 
+			<div class="input-group mt-3">
+			  <span class="input-group-text" id="basic-addon1"><i class="bi bi-gender-ambiguous"></i></span>
+			  <select class="form-select" name="gender">
+			  	  <option selected value="">--Chọn giới tính--</option>
+				  <option value="Male">Nam</option>
+				  <option value="Female">Nữ</option>
+			  </select>
+			</div>
+			<div><small class="js-error js-error-gender text-danger"></small></div>
+			
+			<div class="input-group mt-3">
+			  <span class="input-group-text" id="basic-addon1"><i class="bi bi-envelope"></i></span>
+			  <input name="email" type="text" class="form-control p-3" placeholder="Email" >
+			</div>
+			<div><small class="js-error js-error-email text-danger"></small></div>
+			
+			<div class="input-group mt-3">
+			  <span class="input-group-text" id="basic-addon1"><i class="bi bi-key"></i></span>
+			  <input name="password" type="password" class="form-control p-3" placeholder="Mật khẩu" > 
+			</div>
+			<div><small class="js-error js-error-password text-danger"></small></div>
 
+			<div class="input-group mt-3">
+			  <span class="input-group-text" id="basic-addon1"><i class="bi bi-key-fill"></i></span>
+			  <input name="retype_password" type="password" class="form-control p-3" placeholder="Nhập lại mật khẩu" >
+			</div>
+      <input type="checkbox" class="my-checkbox">Tôi Đồng Ý Với Các Điều Khoản Trên Của LittleCat
+			<div class="progress mt-3 d-none">
+			  <div class="progress-bar" role="progressbar" style="width: 50%;" >Working... 25%</div>
+			</div>
 
+			<button class="mt-3 btn btn-primary col-12">Đăng ký</button>
+			<div class="m-2">
+				Đã có tài khoản? <a href="dangky.html">Đăng nhập ở đây</a>
+			</div>
 
+		</div>
+	</form>
+	
 </body>
-
 </html>
+
+<script>
+	
+	var myaction  = 
+	{
+		collect_data: function(e, data_type)
+		{
+			e.preventDefault();
+			e.stopPropagation();
+
+			var inputs = document.querySelectorAll("form input, form select");
+			let myform = new FormData();
+			myform.append('data_type',data_type);
+
+			for (var i = 0; i < inputs.length; i++) {
+
+				myform.append(inputs[i].name, inputs[i].value);
+			}
+
+			myaction.send_data(myform);
+		},
+
+		send_data: function (form)
+		{
+
+			var ajax = new XMLHttpRequest();
+
+			document.querySelector(".progress").classList.remove("d-none");
+
+			//reset the prog bar
+			document.querySelector(".progress-bar").style.width = "0%";
+			document.querySelector(".progress-bar").innerHTML = "Working... 0%";
+
+			ajax.addEventListener('readystatechange', function(){
+
+				if(ajax.readyState == 4)
+				{
+					if(ajax.status == 200)
+					{
+						//all good
+						myaction.handle_result(ajax.responseText);
+					}else{
+						console.log(ajax);
+						alert("An error occurred");
+					}
+				}
+			});
+
+			ajax.upload.addEventListener('progress', function(e){
+
+				let percent = Math.round((e.loaded / e.total) * 100);
+				document.querySelector(".progress-bar").style.width = percent + "%";
+				document.querySelector(".progress-bar").innerHTML = "Working..." + percent + "%";
+			});
+
+			ajax.open('post','ajax.php', true);
+			ajax.send(form);
+		},
+
+		handle_result: function (result)
+		{
+			console.log(result);
+			var obj = JSON.parse(result);
+			if(obj.success)
+			{
+				alert("Profile created successfully");
+				window.location.href = 'login.php';
+			}else{
+
+				//show errors
+				let error_inputs = document.querySelectorAll(".js-error");
+
+				//empty all errors
+				for (var i = 0; i < error_inputs.length; i++) {
+					error_inputs[i].innerHTML = "";
+				}
+
+				//display errors
+				for(key in obj.errors)
+				{
+					document.querySelector(".js-error-"+key).innerHTML = obj.errors[key];
+				}
+			}
+		}
+	};
+
+</script>
