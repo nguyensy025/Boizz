@@ -1,0 +1,1 @@
+None<?php /**PATH C:\xampp\htdocs\shop\resources\views/home.blade.php ENDPATH**/ ?>
