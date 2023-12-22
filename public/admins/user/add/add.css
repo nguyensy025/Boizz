@@ -1,0 +1,7 @@
+.select2-container--default .select2-search--inline .select2-search__field:focus{
+    border: none;
+    outline: none;
+}
+.select2-container--default .select2-search--inline .select2-search__field{
+    margin-top: -10px;
+}
